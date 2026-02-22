@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body * {
+  transition: transform 0.2s ease;
+}
+
+body *:hover {
+  transform: translateY(-2px);
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  /* Marquee Animation for Skill Icons */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  /* Slide-up Animation for Hero Image */
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1.5s ease-out;
+  }
+
+  /* Fade-in-up Animation for Certificates */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Glowing Shivering Text Animation */
+  @keyframes glow-shiver {
+    0%, 100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+      transform: translate(0, 0);
+    }
+    10% {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+      transform: translate(-1px, -1px);
+    }
+    20% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+      transform: translate(1px, 1px);
+    }
+    30% {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+      transform: translate(-1px, 1px);
+    }
+    40% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+      transform: translate(1px, -1px);
+    }
+    50% {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+      transform: translate(-1px, -1px);
+    }
+    60% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+      transform: translate(1px, 1px);
+    }
+    70% {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+      transform: translate(-1px, 1px);
+    }
+    80% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+      transform: translate(1px, -1px);
+    }
+    90% {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+      transform: translate(-1px, -1px);
+    }
+  }
+
+  .animate-glow-shiver {
+    animation: glow-shiver 0.5s ease-in-out infinite;
+  }
+
+  /* Bouncy Glowing Letter Animation */
+  @keyframes bouncy-glow {
+    0%, 100% {
+      transform: translateY(0);
+      text-shadow: 0 0 5px rgba(59, 130, 246, 0.5), 0 0 10px rgba(59, 130, 246, 0.3), 0 0 15px rgba(59, 130, 246, 0.2);
+    }
+    50% {
+      transform: translateY(-5px);
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+  }
+
+  .animate-bouncy-glow {
+    animation: bouncy-glow 1s ease-in-out infinite;
+  }
+
+  /* Bold, Smooth Typography with Soft Neon Glow */
+  .neon-heading {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Smooth typography */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    color: white;
+  }
+}
