@@ -7,9 +7,8 @@ import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Testimonials from './components/Testimonials';
 import Education from './components/Education';
-import Friends from './components/Friends';
+
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const DATA = {
@@ -24,7 +23,7 @@ const DATA = {
       'State-level Basketball Player',
       'Cloud & DevOps Enthusiast'
     ],
-    bio: "Hi, I’m Avni Gupta — a dedicated student of AIML and the Lead of Microsoft Learn Student Ambassador (MLSA). I am also a State Basketball Player and have represented my state several times with pride. Along with sports, I am deeply passionate about technology. I work as an Agent Developer and have a strong interest in Cloud and DevOps. I also enjoy creating modern web interfaces as a Front-End Developer, and Java is one of my favourite programming languages. My journey combines discipline, creativity, and innovation — and this portfolio reflects the skills, experiences, and passion that define who I am.",
+    bio: "Hi, I'm Avni Gupta — a dedicated student of AIML and the Lead of Microsoft Learn Student Ambassador (MLSA). I am also a State Basketball Player and have represented my state several times with pride. Along with sports, I am deeply passionate about technology. I work as an Agent Developer and have a strong interest in Cloud and DevOps. I also enjoy creating modern web interfaces as a Front-End Developer, and Java is one of my favourite programming languages. My journey combines discipline, creativity, and innovation — and this portfolio reflects the skills, experiences, and passion that define who I am.",
     photo: null, // Will be set by upload
   },
 
